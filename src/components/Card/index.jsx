@@ -6,12 +6,13 @@ import { CardFooter } from './CardFooter';
 
 import styles from './Card.module.scss';
 
-export const Card = () => {
+export const Card = ({ item, isDragging }) => {
+  const { title, subTitle, status, members, files, profession, name, src } = item;
   return (
-    <div className={styles.card}>
-      <CardHeader />
-      <CardBody />
-      <CardFooter />
+    <div className={isDragging ? `${styles.card} ${styles.dragging}` : styles.card}>
+      <CardHeader title={title} subTitle={subTitle} />
+      <CardBody status={status} members={members} files={files} />
+      <CardFooter profession={profession} name={name} src={src} />
     </div>
   );
 };

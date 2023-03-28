@@ -5,7 +5,7 @@ import { ReactComponent as FileSVG } from '../../assets/file.svg';
 import styles from './CardBody.module.scss';
 
 export const CardBody = props => {
-  const { status = 'В приоритете', members = 5, files = 255 } = props;
+  const { status, members, files } = props;
   return (
     <div className={styles.cardBody}>
       <button className={styles.status}>{status}</button>
