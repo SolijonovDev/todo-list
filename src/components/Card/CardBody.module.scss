@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+
+.cardBody {
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+
+  button {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  .status {
+    padding: 5.5px 8px;
+    background-color: $color7;
+    color: $color8;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+
+  .group {
+    background: $color9;
+    border: 1px solid $color10;
+    border-radius: 4px;
+    height: 24px;
+    width: 35px;
+    background-color: $color11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .file {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color9;
+    border: 1px solid $color12;
+    border-radius: 4px;
+    height: 24px;
+    padding: 0 5px;
+  }
+
+  .svgFile {
+    margin-right: 7px;
+  }
+}
