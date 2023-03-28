@@ -33,4 +33,8 @@
     font-weight: 600;
     color: $color6;
   }
+
+  .item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
