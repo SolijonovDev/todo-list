@@ -1,6 +1,5 @@
 import React from 'react';
 
-import photo from '../../assets/img1.png';
 import styles from './CardFooter.module.scss';
 
 export const CardFooter = props => {

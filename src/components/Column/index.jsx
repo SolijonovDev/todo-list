@@ -12,39 +12,35 @@ export const Column = props => {
     <div className={styles.column}>
       <div className={styles.columnHeader}>
         <h4>
-          {title} {items.length}
+          {title} {items?.length}
         </h4>
       </div>
       <Droppable droppableId={droppableId}>
-        {provided => {
-          return (
-            <div className={styles.columnBody} {...provided.droppableProps} ref={provided.innerRef}>
-              {!items.length && (
-                <div className={styles.emptyColumn}>
-                  <AddFilesSVG />
-                  <p className={styles.text}>Если есть подходящие заявки, перетащите их сюда 🤓</p>
-                </div>
-              )}
-              {items.map((item, index) => (
-                <Draggable key={index} draggableId={item.id} index={index}>
-                  {(provided, snapshot) => {
-                    return (
-                      <div
-                        ref={provided.innerRef}
-                        {...provided.draggableProps}
-                        {...provided.dragHandleProps}
-                        className={styles.item}
-                      >
-                        <Card key={item.id} item={item} isDragging={snapshot.isDragging} />
-                      </div>
-                    );
-                  }}
-                </Draggable>
-              ))}
-              <div className={styles.item}>{provided.placeholder}</div>
-            </div>
-          );
-        }}
+        {provided => (
+          <div className={styles.columnBody} {...provided.droppableProps} ref={provided.innerRef}>
+            {!items?.length && (
+              <div className={styles.emptyColumn}>
+                <AddFilesSVG />
+                <p className={styles.text}>Если есть подходящие заявки, перетащите их сюда 🤓</p>
+              </div>
+            )}
+            {items?.map((item, index) => (
+              <Draggable key={item.id} draggableId={item.id} index={index}>
+                {(provided, snapshot) => (
+                  <div
+                    ref={provided.innerRef}
+                    {...provided.draggableProps}
+                    {...provided.dragHandleProps}
+                    className={styles.item}
+                  >
+                    <Card key={item.id} item={item} isDragging={snapshot.isDragging} />
+                  </div>
+                )}
+              </Draggable>
+            ))}
+            <div className={styles.item}>{provided.placeholder}</div>
+          </div>
+        )}
       </Droppable>
     </div>
   );

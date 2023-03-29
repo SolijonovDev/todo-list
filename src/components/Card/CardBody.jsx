@@ -8,19 +8,19 @@ export const CardBody = props => {
   const { status, members, files } = props;
   return (
     <div className={styles.cardBody}>
-      <button className={styles.status}>{status}</button>
-      <button className={styles.group}>
+      <span className={styles.status}>{status}</span>
+      <span className={styles.group}>
         <span className={styles.svgFile}>
           <GroupSVG />
         </span>
         <span>{members}</span>
-      </button>
-      <button className={styles.file}>
+      </span>
+      <span className={styles.file}>
         <span className={styles.svgFile}>
           <FileSVG />
         </span>
         <span>{files}</span>
-      </button>
+      </span>
     </div>
   );
 };

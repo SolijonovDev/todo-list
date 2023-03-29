@@ -4,19 +4,29 @@
   width: 200px;
   min-width: 274px;
   min-height: 120px;
-  border: 1px solid $color4;
   border-radius: 4px;
-  overflow: hidden;
   margin-right: 26px;
+  height: 100%;
 
   .columnHeader {
     background: $color5;
     padding: 11px 9px;
+    position: sticky;
+    top: 44px;
+    border-radius: inherit;
+    border: 1px solid $color4;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .columnBody {
     text-align: center;
     padding: 12px 9px;
+    border-radius: inherit;
+    border: 1px solid $color4;
+    border-top-color: transparent;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
   }
 
   .emptyColumn {

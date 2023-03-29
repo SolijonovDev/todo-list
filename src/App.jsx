@@ -1,7 +1,6 @@
 import { Board } from './components/Board';
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
-import { TodoProvider } from './context/TodoProvider';
 
 import './App.scss';
 
@@ -11,9 +10,7 @@ function App() {
       <Header />
       <div className="main">
         <Sidebar />
-        <TodoProvider>
-          <Board />
-        </TodoProvider>
+        <Board />
       </div>
     </div>
   );

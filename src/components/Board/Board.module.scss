@@ -2,8 +2,6 @@
 
 .board {
   padding: 20px 32px;
-  overflow: auto;
-  padding-right: 60px;
 
   .title {
     font-size: 24px;
@@ -13,16 +11,8 @@
   }
 
   .taskPanel {
-    display: flex;
-    align-items: flex-start;
-  }
-
-  &::-webkit-scrollbar {
-    height: 6px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $color3;
-    border-radius: 28px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
   }
 }
