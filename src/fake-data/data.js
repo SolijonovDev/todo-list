@@ -1,3 +1,8 @@
+import img1 from '../assets/img1.png';
+import img2 from "../assets/img2.png";
+import img3 from "../assets/img3.png";
+import img4 from "../assets/img4.png";
+
 const newColumnDate = [
   {
     "id": "1",
@@ -8,7 +13,7 @@ const newColumnDate = [
     "files": "255",
     "profession": "Рекруитер",
     "name": "Алексей Щербаков",
-    "src": "img1.png"
+    "src": img1,
   },
   {
     "id": "2",
@@ -19,7 +24,7 @@ const newColumnDate = [
     "files": "182",
     "profession": "Рекруитер",
     "name": "Floyd Miles",
-    "src": "img2.png"
+    "src": img2
   },
   {
     "id": "3",
@@ -30,7 +35,7 @@ const newColumnDate = [
     "files": "255",
     "profession": "Рекруитер",
     "name": "Theresa Webb",
-    "src": "img3.png"
+    "src": img3
   },
   {
     "id": "4",
@@ -41,7 +46,7 @@ const newColumnDate = [
     "files": "182",
     "profession": "В приоритете",
     "name": "Vanessa Johnson",
-    "src": "img4.png"
+    "src": img4
   }
 ];
 
@@ -55,7 +60,7 @@ const currentColumnDate = [
     "files": "182",
     "profession": "Рекруитер",
     "name": "Kristin Watson",
-    "src": "img3.png"
+    "src": img3
   },
   {
     "id": "6",
@@ -66,7 +71,7 @@ const currentColumnDate = [
     "files": "182",
     "profession": "Рекруитер",
     "name": "Jacob Jones",
-    "src": "img3.png"
+    "src": img3
   },
   {
     "id": "7",
@@ -77,7 +82,7 @@ const currentColumnDate = [
     "files": "182",
     "profession": "Рекруитер",
     "name": "Wade Warren",
-    "src": "img3.png"
+    "src": img3
   },
   {
     "id": "8",
@@ -88,7 +93,7 @@ const currentColumnDate = [
     "files": "182",
     "profession": "Рекруитер",
     "name": "Cameron Williamson",
-    "src": "img3.png"
+    "src": img3
   },
   {
     "id": "9",
@@ -99,7 +104,7 @@ const currentColumnDate = [
     "files": "182",
     "profession": "Рекруитер",
     "name": "Devon Lane",
-    "src": "img3.png"
+    "src": img3
   },
   {
     "id": "10",
@@ -110,7 +115,7 @@ const currentColumnDate = [
     "files": "182",
     "profession": "Рекруитер",
     "name": "Jacob Jones",
-    "src": "img3.png"
+    "src": img3
   }
 ];
 
@@ -126,7 +131,7 @@ const archiveColumnDate = [
     "files": "182",
     "profession": "В приоритете",
     "name": "Guy Hawkins",
-    "src": "img4.png"
+    "src": img4
   },
   {
     "id": "12",
@@ -137,7 +142,7 @@ const archiveColumnDate = [
     "files": "182",
     "profession": "В приоритете",
     "name": "Annette Black",
-    "src": "img4.png"
+    "src": img4
   },
   {
     "id": "13",
@@ -148,7 +153,7 @@ const archiveColumnDate = [
     "files": "255",
     "profession": "В приоритете",
     "name": "Esther Howard",
-    "src": "img4.png"
+    "src": img4
   }
 ];
 
@@ -162,7 +167,7 @@ const deletedColumnDate = [
     "files": "182",
     "profession": "В приоритете",
     "name": "Guy Hawkins",
-    "src": "img4.png"
+    "src": img4
   },
   {
     "id": "15",
@@ -173,7 +178,7 @@ const deletedColumnDate = [
     "files": "182",
     "profession": "В приоритете",
     "name": "Annette Black",
-    "src": "img4.png"
+    "src": img4
   },
   {
     "id": "16",
@@ -184,7 +189,7 @@ const deletedColumnDate = [
     "files": "255",
     "profession": "В приоритете",
     "name": "Esther Howard",
-    "src": "img4.png"
+    "src": img4
   }
 ]
 

@@ -7,7 +7,7 @@ export const CardFooter = props => {
   return (
     <div className={styles.cardFooter}>
       <div className={styles.photo}>
-        <img src={`${window.origin}/src/assets/${src}`} alt="photo" />
+        <img src={src} alt="photo" />
       </div>
       <div className={styles.info}>
         <p className={styles.profession}>{profession}</p>
